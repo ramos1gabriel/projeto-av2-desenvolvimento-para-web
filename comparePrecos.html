@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Compare Preços</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/estilo.css">
+		<link rel="shortcut icon" href="img/logo2.jpg">
+		<script src="js/jquery.min.js"></script>
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!-- TOPO -->
+		<nav class="navbar navbar-inverse" id="topo">
+		
+			<!-- LOGO -->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/logo.jpg" class="img-responsive img-rounded imgLogo"/>
+					</a>
+					<a class="navbar-brand middle" href="index.html">
+						<span class="branco">Torpedo</span>
+					</a>
+				</div>
+				
+				<!-- CARRINHO -->
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="javascript://" data-toggle="modal" data-target="#carrinhoModal">
+								<span class="glyphicon glyphicon-shopping-cart aumentaIcone branco"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- TUDO -->
+		<div class="container-fluid text-center">
+		
+			<!-- CONTAINER -->
+			<div class="row content">
+			
+				<!-- MENU -->
+				<div class="col-sm-2">
+					<ul class="nav nav-pills nav-stacked">
+						<!-- 3. A aplicação deve ter no mínimo 4 páginas. -->
+						<li><a href="index.html">Home</a></li>
+						<li><a href="ofertas.html">Ofertas</a></li> 
+						<li><a href="cadastro.html">Cadastro</a></li> <!-- 6. Uma página deve ser dedicada a um formulário, o qual deve sofrer validações, utilizando JQUERY. (falaremos disso durante as próximas aulas) -->
+						<li class="active"><a href="comparePrecos.html" >Compare Preços</a></li> <!-- 4. Alguma página deve ter uma tabela que utilize colspan e rowspan. -->
+					</ul>
+				</div>
+				
+				<!-- CONTEUDO -->
+				<div class="col-sm-8 text-left">
+					<h1 class="text-center">Compare Preços</h1>
+					
+					<!-- TIPO DE PRODUTO -->
+					<div class="row text-center">
+						<fieldset>
+							<legend>Selecione um dos produtos abaixo:</legend>
+							<a href="#" class="btn btn-info-customizado">
+								<span class="glyphicon glyphicon-phone aumentaIcone"></span>
+								<br>Smartphone
+							</a>
+							<a href="#" class="btn btn-default">
+								<span class="glyphicon glyphicon-bed aumentaIcone"></span>
+								<br>Casa e Decoração
+							</a>
+							<a href="#" class="btn btn-default">
+								<span class="glyphicon glyphicon-knight aumentaIcone"></span>
+								<br>Games
+							</a>
+							<a href="#" class="btn btn-default">
+								<span class="glyphicon glyphicon-lamp aumentaIcone"></span>
+								<br>Eletrônicos
+							</a>
+							<a href="#" class="btn btn-default">
+								<span class="glyphicon glyphicon-home aumentaIcone"></span>
+								<br>Eletrodomésticos
+							</a>
+							<a href="#" class="btn btn-default">
+								<span class="glyphicon glyphicon-book aumentaIcone"></span>
+								<br>Livros
+							</a>
+						</fieldset>
+						<hr>
+					</div>
+					
+					<div class="row">
+						<table class="table">
+							<thead>
+								<tr>
+									<td colspan="3" align="center">
+										<h3>Smartphones</h3>
+									</td>
+								</tr>
+								<tr>
+									<th width="30%">Modelo</th>
+									<th width="50%">Lojas</th>
+									<th width "20%">Preço</th>
+								</tr>
+							</thead>
+							
+							<tr>
+								<td rowspan="3" class="negrito">Lenovo Vibe A7010</td>
+								<td><img src="img/logo/carrefour.gif" alt="carrefour"/></td>
+								<td>R$ 749,00</td>
+							</tr>
+							
+							<tr>
+								<td><img src="img/logo/kalunga.png" alt="kalunga"/></td>
+								<td>R$ 799,00</td>
+							</tr>
+							
+							<tr>
+								<td><img src="img/logo/walmart.gif" alt="walmart"/></td>
+								<td>R$ 1.093,86</td>
+							</tr>
+							
+							<tr>
+								<td rowspan="2" class="negrito">Motorola Moto G4 Plus</td>
+								<td><img src="img/logo/submarino.png" alt="submarino"/></td>
+								<td>R$ 1.349,10</td>
+							</tr>
+							
+							<tr>
+								<td><img src="img/logo/casabahia.jpg" alt="casas bahia"/></td>
+								<td>R$ 1.499,00</td>
+							</tr>
+							
+							<tr>
+								<td rowspan="4" class="negrito">Samsung Galaxy S7</td>
+								<td><img src="img/logo/casabahia.jpg" alt="casas bahia"/></td>
+								<td>R$ 2.519,10</td>
+							</tr>
+							
+							<tr>
+								<td><img src="img/logo/pontofrio.jpg" alt="pontofrio"/></td>
+								<td>R$ 2.799,00</td>
+							</tr>
+							
+							<tr>
+								<td><img src="img/logo/magazineluiza.jpg" alt="magazineluiza"/></td>
+								<td>R$ 2.879,91</td>
+							</tr>
+						</table> 
+					</div>
+				</div>
+				
+				<!-- PRODUTOS -->
+				<div class="col-sm-2">
+					<div class="well">
+						<p><a href="javascript://"><img src="img/pcnotebook.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+					<div class="well">
+						<p><a href="javascript://"><img src="img/img1.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+					<div class="well">
+						<p><a href="javascript://"><img src="img/ps4.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+					<div class="well">
+						<p><a href="javascript://"><img src="img/xone.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- RODAPÉ -->
+		<div class="panel-footer text-right" id="topo">
+			<p><span class="branco"><b>Torpedo LTDA</b> Copyright &copy;</span></p>
+		</div>
+		
+		<!-- MODAL CARRINHO -->
+		<div class="modal fade" id="carrinhoModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-body text-center">
+						<br><br><br>
+						<span id="carrinho">Seu carrinho está vazio</span>
+						<br><br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

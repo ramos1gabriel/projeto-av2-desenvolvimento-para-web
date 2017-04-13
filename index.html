@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="img/logo2.jpg">
+		<link rel="stylesheet" href="css/estilo.css">
+		<script src="js/jquery.min.js"></script>
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!-- TOPO -->
+		<nav class="navbar navbar-inverse" id="topo">
+		
+			<!-- LOGO -->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/logo.jpg" class="img-responsive img-rounded imgLogo"/>
+					</a>
+					<a class="navbar-brand middle" href="index.html">
+						<span class="branco">Torpedo</span>
+					</a>
+				</div>
+				
+				<!-- CARRINHO -->
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="javascript://" data-toggle="modal" data-target="#carrinhoModal">
+								<span class="glyphicon glyphicon-shopping-cart aumentaIcone branco"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- TUDO -->
+		<div class="container-fluid text-center">
+		
+			<!-- CONTAINER -->
+			<div class="row content">
+			
+				<!-- MENU -->
+				<div class="col-sm-2">
+					<ul class="nav nav-pills nav-stacked">
+						<!-- 3. A aplicação deve ter no mínimo 4 páginas. -->
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="ofertas.html">Ofertas</a></li> 
+						<li><a href="cadastro.html">Cadastro</a></li> <!-- 6. Uma página deve ser dedicada a um formulário, o qual deve sofrer validações, utilizando JQUERY. (falaremos disso durante as próximas aulas) -->
+						<li><a href="comparePrecos.html">Compare Preços</a></li> <!-- 4. Alguma página deve ter uma tabela que utilize colspan e rowspan. -->
+					</ul>
+				</div>
+				
+				<!-- CONTEUDO -->
+				<div class="col-sm-8 text-left">
+					<img src="img/blackFriday.jpg" class="img-responsive img-rounded imgTitle toCenter"/>
+					<h1 class="text-center">Black Friday 2016</h1>
+					
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<hr>
+					<h3 class="text-center">O gerente enloqueceu</h3>
+					<p>
+						<img align="left" src="img/img5.jpg" width="300px" height="200px" class="img-responsive img-rounded imgBF"/>
+						Sed ut mollis dolor, ut tincidunt velit. Maecenas gravida malesuada est, quis finibus justo eleifend eu. 
+						Vestibulum sed posuere nibh, in feugiat tortor. Cras lacus est, porttitor at leo vel, elementum feugiat augue. 
+						Proin magna nulla, sodales rhoncus commodo id, imperdiet a lorem <b>99% desconto</b>. Pellentesque et orci ipsum. 
+						Pellentesque ac auctor tortor.
+					</p>
+					
+					<p>
+						Mauris lobortis dapibus quam vel bibendum. Proin feugiat orci id tellus fringilla pharetra eu et lorem. 
+						Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+						Quisque rhoncus ex dui, quis ultrices quam ultricies sit amet. Nullam fringilla semper augue sed aliquam. 
+						Nam faucibus, libero eu tempor sollicitudin, mi velit tincidunt libero, ut condimentum sapien felis ac enim. 
+						Proin augue massa, bibendum sit amet rhoncus et, <b>compra um leva três</b>. Sed vel malesuada ex, ac consequat mi. 
+						Nunc ornare justo nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+						Quisque tincidunt augue vitae lobortis ultricies. Quisque finibus vestibulum felis nec imperdiet. 
+						Aliquam finibus, justo vitae porttitor pretium, nisl nunc egestas tortor, a viverra augue magna sed est. 
+						Nullam gravida lectus eu commodo rutrum.
+					</p>
+
+					<p>
+						Curabitur gravida in nibh ac dictum. Vestibulum posuere nibh neque, sit amet malesuada massa venenatis id. 
+						Donec varius urna nec nulla aliquam euismod. Duis at felis at nisl molestie faucibus et quis dui. Fusce ut congue est. 
+						Etiam vitae efficitur justo. Nullam vel tortor facilisis, <b>produtos esgotados</b>, malesuada nibh. 
+						Integer imperdiet justo eget orci ullamcorper, id tincidunt ex vestibulum. 
+						Quisque auctor lectus nec convallis gravida. Mauris at pellentesque metus. 
+						Pellentesque eleifend efficitur sapien nec semper. Phasellus placerat lorem vitae leo maximus tincidunt. 
+						Phasellus id tellus tristique, mattis est vel, tempus enim.
+					</p>
+					&nbsp;
+				</div>
+				
+				<!-- PRODUTOS -->
+				<div class="col-sm-2">
+					<div class="well">
+						<p><a href="javascript://"><img src="img/pcnotebook.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+					<div class="well">
+						<p><a href="javascript://"><img src="img/img1.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+					<div class="well">
+						<p><a href="javascript://"><img src="img/ps4.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+					<div class="well">
+						<p><a href="javascript://"><img src="img/xone.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- RODAPÉ -->
+		<div class="panel-footer text-right" id="topo">
+			<p><span class="branco"><b>Torpedo LTDA</b> Copyright &copy;</span></p>
+		</div>
+		
+		<!-- MODAL CARRINHO -->
+		<div class="modal fade" id="carrinhoModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-body text-center">
+						<br><br><br>
+						<span id="carrinho">Seu carrinho está vazio</span>
+						<br><br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

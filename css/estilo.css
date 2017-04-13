@@ -1,0 +1,125 @@
+/* CENTRALIZADOR */
+.toCenter {
+	margin:0 auto;
+	display: inline;
+}
+
+/* TRATA IMAGENS */
+.imgTitle {
+	width: 500px;
+	height: 500px;
+}
+
+.imgADS {
+	width: 200px;
+	height: 200px;
+}
+
+.imgLogo {
+	width: 110px;
+	height: 50px;
+}
+
+.imgSlide {
+	width: 800px;
+	height: 400px;
+}
+
+.imgBF {
+	margin-right: 10px;
+}
+
+/* TRATA FONTES */
+
+.aumentaIcone {
+	font-size: 2em;
+}
+
+.icone1em {
+	font-size: 1em;
+}
+
+.negrito {
+	font-weight: bold;
+}
+
+.verde {
+	color: #40CD28;
+}
+
+.cinza {
+	color:	#999;
+}
+
+.branco {
+	color:	white;
+}
+
+.vermelho {
+	color:	red;
+}
+
+.middle {
+	margin-top: 9px;
+}
+
+#carrinho {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#topo {
+	background-color: #00ADEF;
+	border-color: #00ADEF;
+}
+
+.btn-info-customizado {
+  color: #fff;
+  background-color: #00ADEF;
+  border-color: #00ADEF;
+}
+
+#procuraCep {
+	margin-left: 150px;
+}
+
+#outroEndereco {
+	display: none;
+}
+
+/* VALIDA FORCA DA SENHA */
+.pass-strength-item { 
+	margin-top: 5px;
+	float: left;
+	background-color: #DDD;
+	width: 15%;
+	margin-right: 2%;
+	height: 3px;
+}
+
+.pass-strength .pass-strenght-text {
+	margin-top: 3%;
+	float: left;
+	width: 23%;
+	line-height: 0;
+	font-size: 11px;
+	margin-left: 2%
+}
+
+/* VALIDACAO */
+
+#errorEmail, 
+#errorSenha, 
+#errorConfirmesenha, 
+#errorNome, 
+#errorSexo, 
+#errorSexo, 
+#errorCpf, 
+#errorDatanasc, 
+#errorTel, 
+#errorTipo, 
+#errorCep {
+	display: none;
+}
+
+

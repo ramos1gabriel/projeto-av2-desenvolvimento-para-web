@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastro Cliente</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="img/logo2.jpg">
+		<link rel="stylesheet" href="css/estilo.css">
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap-select.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="css/bootstrap-select.min.css" type="text/css">
+		<!-- MASK JS-->
+		<script src="js/jquery.mask.min.js" type="text/javascript"></script>
+		<!-- VALIDACAO -->
+		<script src="js/validacao.js" type="text/javascript"></script>
+	</head>
+	<body>
+		
+		<!-- TOPO -->
+		<nav class="navbar navbar-inverse" id="topo">
+		
+			<!-- LOGO -->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/logo.jpg" class="img-responsive img-rounded imgLogo"/>
+					</a>
+					<a class="navbar-brand middle" href="index.html">
+						<span class="branco">Torpedo</span>
+					</a>
+				</div>
+				
+				<!-- CARRINHO -->
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="javascript://" data-toggle="modal" data-target="#carrinhoModal">
+								<span class="glyphicon glyphicon-shopping-cart aumentaIcone branco"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- TUDO -->
+		<div class="container-fluid text-center">
+		
+			<!-- CONTAINER -->
+			<div class="row content">
+			
+				<!-- MENU -->
+				<div class="col-sm-2">
+					<ul class="nav nav-pills nav-stacked">
+						<!-- 3. A aplicação deve ter no mínimo 4 páginas. -->
+						<li><a href="index.html">Home</a></li>
+						<li><a href="ofertas.html">Ofertas</a></li> 
+						<li class="active"><a href="cadastro.html">Cadastro</a></li> <!-- 6. Uma página deve ser dedicada a um formulário, o qual deve sofrer validações, utilizando JQUERY. (falaremos disso durante as próximas aulas) -->
+						<li><a href="comparePrecos.html">Compare Preços</a></li> <!-- 4. Alguma página deve ter uma tabela que utilize colspan e rowspan. -->
+					</ul>
+				</div>
+				
+				<!-- CONTEUDO -->
+				<div class="col-sm-8 text-left">
+					<h1>Identificação</h1>
+					<p>Cadastre-se! Aproveite promoções, ofertas exclusivas e agilize suas compras com seus dados salvos.</p><br>
+					
+					<!-- FORMULARIO -->
+					<form name="formulario" id="formulario">
+						<div class="row">
+							<div class="col-sm-4">
+								<fieldset>
+									<legend>Login</legend>
+									<div class="form-group" id="emailDiv">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" id="email" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Informe um e-mail válido" >
+										<span class="glyphicon glyphicon-remove form-control-feedback" id="errorEmail"></span>
+										<span id="msgEmail" class="vermelho"></span>
+									</div>
+									<div class="form-group" id="senhaDiv">
+										<label for="senha">Senha</label>
+										<input type="password" class="form-control" id="senha" maxlength="12" placeholder="Senha">
+										<span class="glyphicon glyphicon-remove form-control-feedback" id="errorSenha"></span>
+										
+										<!-- FORCA DA SENHA -->
+										<div class="pass-strength">
+											<span class="pass-strength-item" id="fraco"></span>
+											<span class="pass-strength-item" id="medio"></span>
+											<span class="pass-strength-item" id="forte"></span>
+											<span class="pass-strenght-text" id="texto"></span>
+										</div>
+										
+										<br><span id="msgSenha" class="vermelho"></span>
+									</div>
+									<div class="form-group" id="confirmesenhaDiv">
+										<label for="confirmesenha">Confirme sua senha</label>
+										<input type="password" class="form-control" id="confirmesenha"  maxlength="12" placeholder="Digite a senha novamente">
+										<span class="glyphicon glyphicon-remove form-control-feedback" id="errorConfirmesenha"></span>
+										<span id="msgConfirmesenha" class="vermelho"></span>
+									</div>
+								</fieldset>
+							</div>
+							<div class="col-sm-2"></div>
+							<div class="col-sm-4">
+								<fieldset>
+									<legend>Dados Cadastrais</legend>
+									<div class="form-group" id="nomeDiv">
+										<label for="nome">Nome completo</label>
+										<input type="text" class="form-control" id="nome" placeholder="Nome completo">
+										<span class="glyphicon glyphicon-remove form-control-feedback" id="errorNome"></span>
+										<span id="msgNome" class="vermelho"></span>
+									</div>
+									
+									<div class="form-group">
+										<label for="sexo">Sexo</label>
+										<div class=" radio">
+											<label><input type="radio" name="sexo" value="M" id="mas">Masculino</label>
+											<label><input type="radio" name="sexo" value="F" id="fem">Feminino</label>
+											<br><span id="msgSexo" class="vermelho"></span>
+										</div>
+									</div>
+									
+									<div class="form-group" id="cpfDiv">
+										<label for="cpf">CPF</label>
+										<input type="text" class="form-control" id="cpf" placeholder="___.___.___-__">
+										<span class="glyphicon glyphicon-remove form-control-feedback" id="errorCpf"></span>
+										<span id="msgCpf" class="vermelho"></span>
+									</div>
+									
+									<div class="form-group" id="datanascDiv">
+										<label for="datanasc">Data de nascimento</label>
+										<input type="date" class="form-control" id="datanasc" placeholder="dd/mm/aaaa">
+										<span class="glyphicon glyphicon-remove form-control-feedback" id="errorDatanasc"></span>
+										<span id="msgDatanasc" class="vermelho"></span>
+									</div>
+								</fieldset>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm-4">
+								<fieldset>
+									<legend>Contato</legend>
+									<div class="form-group" id="telDiv">
+										<label for="tel">Telefone para contato</label>
+										<input type="text" class="form-control" id="tel" placeholder="(__) ____-_____">
+										<span class="glyphicon glyphicon-remove form-control-feedback" id="errorTel"></span>
+										<span id="msgTel" class="vermelho"></span>
+									</div>
+									<div class="form-group">
+										<label for="cel">Telefone celular</label>
+										<input type="text" class="form-control" id="cel" placeholder="(__) ____-_____">
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="S" checked>Desejo receber ofertas por <b>e-mail</b></label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="S">Desejo receber ofertas pelo <b>celular</b></label>
+									</div>
+								</fieldset>
+							</div>
+							<div class="col-sm-2"></div>
+							<div class="col-sm-4">
+								<fieldset>
+									<legend>Endereço de cadastro</legend>
+									<div class="form-group">
+										<label for="tipo">Tipo de endereço</label><br>
+										<select class="selectpicker show-tick form-control" id="tipo">
+											<option value="1" selected>Apartamento</option>
+											<option value="2">Casa</option>
+											<option value="3">Comercial</option>
+											<option value="4">Outro</option>
+										</select>
+									</div>
+									<div class="form-group" id="outroEndereco">
+										<label for="outro">Outro tipo de endereço</label>
+										<input type="text" class="form-control" id="outro">
+										<span class="glyphicon glyphicon-remove form-control-feedback" id="errorTipo"></span>
+										<span id="msgTipo" class="vermelho"></span>
+									</div>
+									<div class="form-group" id="cepDiv">
+										<label for="cep">CEP</label>
+										<input type="text" class="form-control" id="cep" placeholder="_____-___">
+										<span class="glyphicon glyphicon-remove form-control-feedback" id="errorCep"></span>
+										<a href="https://goo.gl/ahI9nM" id="procuraCep" target="_blank">Não sei meu CEP</a>
+										<span id="msgCep" class="vermelho"></span>
+									</div><br>
+									
+									<button id="cadastrar" type="button" class="btn btn-info-customizado">Cadastrar</button>
+								</fieldset>
+							</div>
+						</div>
+					</form>
+				</div>
+				
+				<!-- PRODUTOS -->
+				<div class="col-sm-2">
+					<div class="well">
+						<p><a href="javascript://"><img src="img/pcnotebook.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+					<div class="well">
+						<p><a href="javascript://"><img src="img/img1.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+					<div class="well">
+						<p><a href="javascript://"><img src="img/ps4.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+					<div class="well">
+						<p><a href="javascript://"><img src="img/xone.jpg" class="img-responsive imgADS"/></a></p>
+						<p class="negrito">Lorem ipsum</p>
+						<p>R$ 0,00</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- RODAPÉ -->
+		<div class="panel-footer text-right" id="topo">
+			<p><span class="branco"><b>Torpedo LTDA</b> Copyright &copy;</span></p>
+		</div>
+		
+		<!-- MODAL CARRINHO -->
+		<div class="modal fade" id="carrinhoModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-body text-center">
+						<br><br><br>
+						<span id="carrinho">Seu carrinho está vazio</span>
+						<br><br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

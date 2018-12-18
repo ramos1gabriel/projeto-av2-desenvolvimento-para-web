@@ -1,11 +1,11 @@
 # Projeto Torpedo
 
-Trabalho final da disciplina de Desenvolvimento para Web da Universidade Veiga de Almeida.
-Docente: Andre Oliveira
-Curso: Sistemas de Informação
+Trabalho final da disciplina de Desenvolvimento para Web da Universidade Veiga de Almeida. 
+Docente: Andre Oliveira 
+Curso: Sistemas de Informação 
 Ano: 2016
 
-## Requisitos
+## Requisitos do trabalho
 
 1. Escolher um tema para elaborar a sua aplicação.
 2. O menu de opções deverá estar presente em todas as páginas, ser vertical e estar localizado no canto esquerdo (abaixo do banner).

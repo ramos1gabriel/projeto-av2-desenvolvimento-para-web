@@ -1,9 +1,9 @@
 # Projeto Torpedo
 
-Trabalho final da disciplina de Desenvolvimento para Web da Universidade Veiga de Almeida. 
-Docente: Andre Oliveira 
-Curso: Sistemas de Informação 
-Ano: 2016
+* Trabalho final da disciplina de Desenvolvimento para Web da Universidade Veiga de Almeida. 
+* Docente: Andre Oliveira 
+* Curso: Sistemas de Informação 
+* Ano: 2016
 
 ## Requisitos do trabalho
 

@@ -5,13 +5,13 @@
 * Curso: Sistemas de Informação 
 * Ano: 2016
 
-### Descrição do projeto
+## Descrição do projeto
 
 Torpedo.com, Inc. é um e-commerce foca na venda de produtos diversos, incluindo brinquedos, eletrônicos, vestuários e acessórios. Além disso, a gigante do varejo online oferece serviços, como a Torpedo Web Services (serviços de armazenamento em nuvem), Torpedo Prime (streaming) e Alexo (assistente virtual).
 
 Nosso principal valor é conhecer as necessidades dos consumidores. A Torpedo também prega pela velocidade e inovação, fatores que contribuíram para a formação de uma cultura organizacional focada no cliente. 
 
-## Requisitos do trabalho
+### Requisitos do trabalho
 
 1. Escolher um tema para elaborar a sua aplicação.
 2. O menu de opções deverá estar presente em todas as páginas, ser vertical e estar localizado no canto esquerdo (abaixo do banner).

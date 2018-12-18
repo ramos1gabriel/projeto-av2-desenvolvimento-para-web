@@ -5,6 +5,12 @@
 * Curso: Sistemas de Informação 
 * Ano: 2016
 
+### Descrição do projeto
+
+Torpedo.com, Inc. é um e-commerce foca na venda de produtos diversos, incluindo brinquedos, eletrônicos, vestuários e acessórios. Além disso, a gigante do varejo online oferece serviços, como a Torpedo Web Services (serviços de armazenamento em nuvem), Torpedo Prime (streaming) e Alexo (assistente virtual).
+
+Nosso principal valor é conhecer as necessidades dos consumidores. A Torpedo também prega pela velocidade e inovação, fatores que contribuíram para a formação de uma cultura organizacional focada no cliente. 
+
 ## Requisitos do trabalho
 
 1. Escolher um tema para elaborar a sua aplicação.
@@ -13,9 +19,3 @@
 4. Alguma página deve ter uma tabela que utilize colspan e rowspan.
 5. Alguma página deve apresentar uma novidade não vista em sala (como, por exemplo, o Orbit para mover o banner, bootstrap, etc..)
 6. Uma página deve ser dedicada a um formulário, o qual deve sofrer validações, utilizando JQUERY. 
-
-### Descrição do projeto
-
-Torpedo.com, Inc. é um e-commerce foca na venda de produtos diversos, incluindo brinquedos, eletrônicos, vestuários e acessórios. Além disso, a gigante do varejo online oferece serviços, como a Torpedo Web Services (serviços de armazenamento em nuvem), Torpedo Prime (streaming) e Alexo (assistente virtual).
-
-Nosso principal valor é conhecer as necessidades dos consumidores. A Torpedo também prega pela velocidade e inovação, fatores que contribuíram para a formação de uma cultura organizacional focada no cliente. 
